@@ -1,5 +1,5 @@
-# Your wiki name
+# Trader Jared's Blog
 
 [Home](index.md)
-[About](about.md)
+[Reading](reading.md)
 [Download](download.md)
