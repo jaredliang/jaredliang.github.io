@@ -1,20 +1,22 @@
 ## 2016/09/28 ##
 `EURUSD`  
- - ECB could run out of Bunds to buy as soon as November, raising the likelihood of technical changes to QE at the October 20 meeting (Citi)
- - Germany's 2y bond yields hit record low as Deutsche rout deepens. Yields should rather rise as bail out risk rises. http://reut.rs/2dvVENm  
+
+ * ECB could run out of Bunds to buy as soon as November, raising the likelihood of technical changes to QE at the October 20 meeting (Citi)
+ * Germany's 2y bond yields hit record low as Deutsche rout deepens. Yields should rather rise as bail out risk rises. http://reut.rs/2dvVENm  
 
  ![test](./imgs/20160928-1.jpg "")  
- - Spain Seen Losing Momentum as Threat of New Vote Rises: Chart  
+ * Spain Seen Losing Momentum as Threat of New Vote Rises: Chart  
 
  ![test](./imgs/20160928-2.png "")   
- - EUR will be the diminishing prospects for aggressive ECB easing from here. In particular, the Governing Council will have to deal with issues like asset scarcity and the flatness of the EGB curve. We expect the ECB to announce more measures that will allow it to lengthen the duration of its programme this December.
- - We doubt that it will be able to continue buying EGBs at current pace beyond 2017, however. As a result market expectations of a QE taper could intensify next year. All this will likely make EUR a less attractive funding currency and should help lift the long end of the EGB curve relative to the rest of G10.
- - Leman vs. DB
+ * EUR will be the diminishing prospects for aggressive ECB easing from here. In particular, the Governing Council will have to deal with issues like asset scarcity and the flatness of the EGB curve. We expect the ECB to announce more measures that will allow it to lengthen the duration of its programme this December.
+ * We doubt that it will be able to continue buying EGBs at current pace beyond 2017, however. As a result market expectations of a QE taper could intensify next year. All this will likely make EUR a less attractive funding currency and should help lift the long end of the EGB curve relative to the rest of G10.
+ * Leman vs. DB
 
  ![test](./imgs/20160928-4.jpg "")  
 
 
 `Reading`
+
  * Live in hope:
 
  ![test](./imgs/20160928-5.png "")  
