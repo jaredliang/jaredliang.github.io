@@ -1,8 +1,25 @@
+## 2016/09/29 ##
+`News Summary`
+
+* Chinese billionaire Wang Jianlin made his fortune in the country's real estate market -- and now he's warning that it's spiraling out of control.
+* OPEC Agrees to First Oil Output Cut in Eight Years
+* Commodity currencies firm, yen sags after OPEC oil curb agreement – RTRS
+* WTO Says Global Trade in Its Worst Year Since Financial Crisis
+* US Forex Traders Numbers Rise for the First Time Since 2012: Investment Trends
+
+`Reading`  
+* How much money have human created http://www.valuewalk.com/2016/09/much-money-humans-created/
+
+![test](./imgs/20160929-2.jpg "")  
+
+* "If you get up in the morning and think the future is going to be better, it is a bright day. Otherwise, it's not." - Elon Musk
+
 ## 2016/09/28 ##
 `EURUSD`  
 
  * ECB could run out of Bunds to buy as soon as November, raising the likelihood of technical changes to QE at the October 20 meeting (Citi)
  * Germany's 2y bond yields hit record low as Deutsche rout deepens. Yields should rather rise as bail out risk rises. http://reut.rs/2dvVENm  
+ * S&P Sees Slowdown but No Recession for UK and Euro Zone After Brexit. The Bank of England’s decision to expand its bond-buying programme had calmed the British gilt market and S&P expected the country’s housing market would have only a “soft landing” because of low interes
 
  ![test](./imgs/20160928-1.jpg "")  
  * Spain Seen Losing Momentum as Threat of New Vote Rises: Chart  
@@ -48,7 +65,9 @@ whilst in a situation of loss they are likely to run the loss.
 
  ![test](./imgs/20160928-6.png "")  
 
+ ![test](./imgs/20160928-7.png "")  
 
+ ![test](./imgs/20160929-1.png "")  
 
 ## 2016/09/27 ##
 * Thought: Set profit taking point at first.
@@ -68,8 +87,3 @@ whilst in a situation of loss they are likely to run the loss.
 * Some forecasters think the U.S. economy is on track for 3% growth this quarter, best in two years
 
 * Reading..
-
-* Economic Project: https://github.com/rsvp/fecon235
-* Economic Project: FRED API http://mortada.net/python-api-for-fred.html
-* Economic Data Source: http://databootcamp.nyuecon.com/data/
-* Economic Data Source: https://docs.google.com/document/d/1L2ZDKFyyqfOrCGbNcCIE9mmgap4tjkTNuw32hK4c6BI/edit

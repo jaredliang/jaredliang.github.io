@@ -2,4 +2,4 @@
 
 [Home](index.md)
 [Reading](reading.md)
-[Download](download.md)
+[algorithmic trading](algo.md)
