@@ -1,11 +1,14 @@
 ## 2016/09/29 ##
 `News Summary`
 
+* US GDP growth revised up to 1.4% in Q2
+* A higher oil price would also be supportive for the US inflation outlook potentially reinforcing the Fed’s confidence that it will return to their 2.0% target, and encouraging the Fed to continue gradually tightening monetary policy in the year ahead offering support for the US dollar.
 * Chinese billionaire Wang Jianlin made his fortune in the country's real estate market -- and now he's warning that it's spiraling out of control.
 * OPEC Agrees to First Oil Output Cut in Eight Years
 * Commodity currencies firm, yen sags after OPEC oil curb agreement – RTRS
 * WTO Says Global Trade in Its Worst Year Since Financial Crisis
 * US Forex Traders Numbers Rise for the First Time Since 2012: Investment Trends
+* USD: Weak US capital spending has continued into Q3 - MUFG. The latest durable goods report released yesterday revealed that core shipments continued to contract in August signalling that capital investment has likely remained a drag on growth in Q3 for the fourth consecutive quarter.
 
 `Reading`  
 * How much money have human created http://www.valuewalk.com/2016/09/much-money-humans-created/
