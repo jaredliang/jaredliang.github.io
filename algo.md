@@ -1,4 +1,7 @@
 # Algorithmic Trading #
+`My Trading Utilities`
+ * [Search for similar patterns in history](searchinhist.md)
+
 
 `Resources`
 

@@ -1,3 +1,28 @@
+## 2016/10/02 ##
+
+`Trading System Development`
+
+ * [Search for similar patterns in history](searchinhist.md)
+
+
+## 2016/09/30 ##
+`News Summary`
+ * Fed’s Harker Backs December Rate Rise if Growth Stays on Track
+ * China 7-day repo fixing drops by 30bps to 2.55%
+ * Equities Tumble on Deutsche Bank Jitters, Swiss Franc Surges
+ * Oil prices continue to fall as doubts over OPEC agreement build
+
+ ![test](./imgs/20160930-1.jpg "")  
+
+
+`Reading`  
+
+ * Morning Page: Every morning, soon after waking, you must write 750 words—equivalent to about three full pages longhand. The idea is to start while your brain is too bleary to censor itself, so you can write more freely. In general, filling three pages takes about a half hour. She says the inconvenience of handwriting compared to typing is worth it because “we get a truer connection—to ourselves and our deepest thoughts—when we actually put pen to
+https://www.weforum.org/agenda/2016/09/this-morning-ritual-could-help-you-this-is-how-it-works?utm_content=bufferce56a&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
+
+
+
+
 ## 2016/09/29 ##
 `News Summary`
 
@@ -11,6 +36,7 @@
 * USD: Weak US capital spending has continued into Q3 - MUFG. The latest durable goods report released yesterday revealed that core shipments continued to contract in August signalling that capital investment has likely remained a drag on growth in Q3 for the fourth consecutive quarter.
 
 `Reading`  
+
 * How much money have human created http://www.valuewalk.com/2016/09/much-money-humans-created/
 
 ![test](./imgs/20160929-2.jpg "")  

@@ -1,4 +1,4 @@
-# Trader Jared's Blog
+# Jared's Algorithmic Trading Blog
 
 [Home](index.md)
 [Reading](reading.md)
