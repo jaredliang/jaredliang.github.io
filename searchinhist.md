@@ -8,6 +8,9 @@
  * Vector Representation:
    * Zigzag Patterns
    * Distance between MAs(7,13,23,37) and current price
+   * Slope (linear regression) of MAs
+   * Candlestick patterns
+   * Number of bullish bars and bearish bars 
 
 ## Datasets ##
  * EURUSD 1min in Metatrader format
@@ -26,5 +29,3 @@
  ![test](./imgs/exp2.png "")  
 
  ![test](./imgs/exp3.png "")  
-
- 
