@@ -6,8 +6,11 @@
 * Analysts remain upbeat about the path of the German economy
 * ZEW’s index covering the current economic situation dipped from June, but only very slightly, reaching 86.4 in July from 88. That’s a slight miss compared to forecasts. The expectations index also dipped to 17.5.
 
-
 ![ZEW](./assets/index-7e5c0.png "")
+
+* Helpful summary:
+![summary](./assets/index-52d36.png "")
+
 
 ## 2016/10/02 ##
 
