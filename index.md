@@ -1,3 +1,13 @@
+## 2017/07/18 ##
+`News Summary`
+
+* There are doubts in the minds of traders over Fed monetary policy and the ability for Trump to deliver that are driving selling pressure on the dollar.
+* Italy risk spread over Germany keeps falling ahead of Thursday's #ECB meeting as mkts expect no guidance change on the QE program this mth
+* Analysts remain upbeat about the path of the German economy
+* ZEW’s index covering the current economic situation dipped from June, but only very slightly, reaching 86.4 in July from 88. That’s a slight miss compared to forecasts. The expectations index also dipped to 17.5.
+
+(ZEW)[assets/index-7e5c0.png]
+
 ## 2016/10/02 ##
 
 `Trading System Development`
