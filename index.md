@@ -1,3 +1,12 @@
+## 2017/07/19 ##
+`News Summary`
+
+* The euro has pushed above the 1.15 line and is trading at its highest levels since May 2016. The currency received a boost on Tuesday, following the news that the Republicans will not attempt to advance their health care proposal before Congress takes a recess in August. This decision is a major setback to President Trump, who has tried to pass a health care bill which would replace Obamacare, but opposition from some Republican lawmakers has meant that the White House does not have the votes to pass such a bill.
+* "ECB continues moving closer to eventual policy normalisation". By normalisation it is meant a reduction in quantitative easing - or asset purchases in ECB-speak.  
+* Nice options trading strategies:
+![OP](./assets/index-a3edd.png "")
+
+
 ## 2017/07/18 ##
 `News Summary`
 
