@@ -1,3 +1,8 @@
+## 2017/07/29##
+* [Technical Analysis Charts](20170729.md)
+
+
+
 ## 2017/07/20 ##
 * The ECB's Balance Sheet Is Now The Size Of Japan's GDP
 ![OP](./assets/index-bdd3c.png "")
