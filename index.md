@@ -1,6 +1,19 @@
-## 2017/07/29##
+## 2017/08/02 ##
+* [Technical Analysis Charts](20170802.md)
+
+## 2017/08/01 ##
+* [Technical Analysis Charts](20170801.md)
+
+## 2017/07/29 ##
 * [Technical Analysis Charts](20170729.md)
 
+ps ax |grep pred |grep py  | awk '{ print $1 }' |xargs kill
+
+ps ax |grep min |grep py  | awk '{ print $1 }' |xargs kill -9
+
+
+
+* COT: 重點放在投機部位上，也就是舊版的NON-COMMERCIAL(非商業持倉)以及新版的LEVERAGED FUNDS(槓桿基金)淨部位。
 
 
 ## 2017/07/20 ##
