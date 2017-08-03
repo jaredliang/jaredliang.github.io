@@ -1,3 +1,6 @@
+## 2017/08/04 ##
+* [Technical Analysis Charts](20170804.md)
+
 ## 2017/08/02 ##
 * [Technical Analysis Charts](20170802.md)
 
