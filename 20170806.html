@@ -74,6 +74,18 @@ var DemoGrid = {
       $gridContainer.append($item);
 
 
+	  	  	  $item =$( '#fxeo');
+     $item.attr({
+        'data-w': 2,
+        'data-h': 1,
+        'data-x': 0,
+        'data-y': 2
+      });
+      $gridContainer.append($item);
+
+
+	  
+	  
 	  	  $item =$( '#ratechart');
      $item.attr({
         'data-w': 2,
@@ -185,8 +197,17 @@ $(function() {
     <p style="display:inline-block;text-decoration:none">FED Rate Probability</p></div>   
   </div></li>
 
-  
 
+      <li id="fxeo"><div class="inner" style="height:100%;display:inline-block;font-size:12px;line-height:1em">
+   <div class="controls">
+   <a href="#zoom1" class="resize" data-w="2" data-h="1" style="font-size:20px">Small</a> +
+   <a href="#zoom2" class="resize" data-w="4" data-h="2" style="font-size:20px">Big</a>
+   </div>
+	<img src="imgs/20170806_fxeo.png" style="width:100%;height:90%">
+    <p style="display:inline-block;text-decoration:none">Euro Currency Options</p></div>   
+  </div></li>
+
+  
 
   <li id="myDiv"><div class="inner">
   <center><p style="font-size:18px;line-height:1em;text-decoration:underline;padding-top:10px">News Summary</p></center>
