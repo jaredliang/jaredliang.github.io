@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>2017/08/06 Forex and Taiwan Index Futures Dashboard </title>
+  <link rel="stylesheet" href="demo/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <script src="spec/fixtures.js"></script>
+  <script src="src/gridList.js"></script>
+  <script src="src/jquery.gridList.js"></script>
+  
+<script>
+var DemoGrid = {
+  currentSize: 3,
+  buildElements: function($gridContainer, items) {
+    var item, i;
+      $item = $(
+        '<li>' +
+          '<div class="inner" style="height:100%;display:inline-block;font-size:12px;line-height:1em">' +
+            '<div class="controls">' +
+              '<a href="#zoom1" class="resize" data-w="2" data-h="1" style="font-size:20px">Small</a>' +
+              '<a href="#zoom2" class="resize" data-w="4" data-h="2" style="font-size:20px">Big</a>' +
+            '</div>' +
+		  '<img src="imgs/20170804_m1ec.png" style="width:100%;height:90%">'+
+          '<p style="display:inline-block;text-decoration:none">EUR/USD</p></div>' +
+		  
+        '</li>'
+      );
+      $item.attr({
+        'data-w': 2,
+        'data-h': 1,
+        'data-x': 0,
+        'data-y': 0
+      });
+      $gridContainer.append($item);
+
+      $item = $(
+        '<li>' +
+          '<div class="inner" style="height:100%;display:inline-block;font-size:12px;line-height:1em">' +
+            '<div class="controls">' +
+              '<a href="#zoom1" class="resize" data-w="2" data-h="1" style="font-size:20px">Small</a>' +
+              '<a href="#zoom2" class="resize" data-w="4" data-h="2" style="font-size:20px">Big</a>' +
+            '</div>' +
+		  '<img src="imgs/20170805_ydx.png" style="width:100%;height:90%">'+
+          '<p style="display:inline-block;text-decoration:none">DXY</p></div>' +
+		  
+        '</li>'
+      );
+      $item.attr({
+        'data-w': 2,
+        'data-h': 1,
+        'data-x': 2,
+        'data-y': 0
+      });
+      $gridContainer.append($item);
+	  
+	  
+	  $item =$( '#myDiv');
+     $item.attr({
+        'data-w': 4,
+        'data-h': 5,
+        'data-x': 2,
+        'data-y': 1
+      });
+      $gridContainer.append($item);
+
+	  $item =$( '#nasdaq');
+     $item.attr({
+        'data-w': 2,
+        'data-h': 1,
+        'data-x': 4,
+        'data-y': 0
+      });
+      $gridContainer.append($item);
+
+
+	  	  $item =$( '#ratechart');
+     $item.attr({
+        'data-w': 2,
+        'data-h': 1,
+        'data-x': 0,
+        'data-y': 1
+      });
+      $gridContainer.append($item);
+
+	  
+	},
+  resize: function(size) {
+    if (size) {
+      this.currentSize = size;
+    }
+    $('#grid').gridList('resize', this.currentSize);
+  },
+  flashItems: function(items) {
+    // Hack to flash changed items visually
+    for (var i = 0; i < items.length; i++) {
+      (function($element) {
+        $element.addClass('changed')
+        setTimeout(function() {
+          $element.removeClass('changed');
+        }, 0);
+      })(items[i].$element);
+    }
+  }
+};
+
+$(window).resize(function() {
+  $('#grid').gridList('reflow');
+});
+
+$(function() {
+  DemoGrid.buildElements($('#grid'), fixtures.DEMO);
+
+  $('#grid').gridList({
+    lanes: DemoGrid.currentSize,
+    widthHeightRatio: 264 / 294,
+    heightToFontSizeRatio: 0.25,
+    onChange: function(changedItems) {
+      DemoGrid.flashItems(changedItems);
+    }
+  });
+  $('#grid li .resize').click(function(e) {
+    e.preventDefault();
+    var itemElement = $(e.currentTarget).closest('li'),
+        itemWidth = $(e.currentTarget).data('w'),
+        itemHeight = $(e.currentTarget).data('h');
+
+    $('#grid').gridList('resizeItem', itemElement, {
+      w: itemWidth,
+      h: itemHeight
+    });
+  });
+  $('.add-row').click(function(e) {
+    e.preventDefault();
+    DemoGrid.resize(DemoGrid.currentSize + 1);
+  });
+  $('.remove-row').click(function(e) {
+    e.preventDefault();
+    DemoGrid.resize(Math.max(1, DemoGrid.currentSize - 1));
+  });
+});
+
+</script>  
+  
+  
+</head>
+<body>
+  <div class="header">
+
+<a href="https://twitter.com/jaredliangtw" class="button" style="width:380px">Trader Jared's Daily Dashboard (2017/08/06)</a> 
+  <a href="#remove-row" class="button remove-row">-</a>
+    <a href="#add-row" class="button add-row">+</a>
+
+	</div>
+  <div class="grid-container">
+    <ul id="grid" class="grid">
+      <li class="position-highlight">
+        <div class="inner"></div>
+      </li>
+    </ul>
+  </div>
+  
+  
+  
+  
+  <li id="nasdaq"><div class="inner" style="height:100%;display:inline-block;font-size:12px;line-height:1em">
+   <div class="controls">
+   <a href="#zoom1" class="resize" data-w="2" data-h="1" style="font-size:20px">Small</a> +
+   <a href="#zoom2" class="resize" data-w="4" data-h="2" style="font-size:20px">Big</a>
+   </div>
+	<img src="imgs/20170805_nas.png" style="width:100%;height:90%">
+    <p style="display:inline-block;text-decoration:none">Nasdaq</p></div>   
+  </div></li>
+
+
+
+
+
+    <li id="ratechart"><div class="inner" style="height:100%;display:inline-block;font-size:12px;line-height:1em">
+   <div class="controls">
+   <a href="#zoom1" class="resize" data-w="2" data-h="1" style="font-size:20px">Small</a> +
+   <a href="#zoom2" class="resize" data-w="4" data-h="2" style="font-size:20px">Big</a>
+   </div>
+	<img src="imgs/20170806_rate.png" style="width:100%;height:90%">
+    <p style="display:inline-block;text-decoration:none">FED Rate Probability</p></div>   
+  </div></li>
+
+  
+
+
+  <li id="myDiv"><div class="inner">
+  <center><p style="font-size:18px;line-height:1em;text-decoration:underline;padding-top:10px">News Summary</p></center>
+  <p>
+  <ul style="font-size:14px;text-align:left;padding-left:50px;padding-top:20px">
+  <li style="position: relative;line-height:1.5em;text-align:left;text-decoration:none" >
+   U.S. employers hired more workers than expected in July and raised their wages, signs of labor market tightness that likely clears the way for the Federal Reserve to announce a plan to start shrinking its massive bond portfolio.
+  </li>
+  <li style="position: relative;line-height:1.5em;text-align:left;text-decoration:none" >[CFTC]The bulls cut gross long euro positions for the second consecutive week.</li>
+
+  <li style="position: relative;line-height:1.5em;text-align:left;text-decoration:none" >
+  Another new record last week for noncommercial $VIX traders net short positioning
+  </li> 
+<img src="imgs/20170806_vix.png" style="width:560px;height:300px" align="center">
+
+  <li style="position: relative;line-height:1.5em;text-align:left;text-decoration:none" >Interactive Brokers Raises Vol Product Margins In Anticipation Of "VIX Shock"</li>
+  <li style="position: relative;line-height:1.5em;text-align:left;text-decoration:none" >
+Merkel's victory seems already a foregone conclusion 7 weeks before the federal election in Sept. 
+ </li>
+<img src="imgs/20170806_2.png" style="width:560px;height:300px" align="center">
+  
+
+   </ul>
+  </p>
+  </div></li>
+
+
+
+  
+  
+  <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>
