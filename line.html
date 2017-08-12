@@ -31,7 +31,7 @@ var x = d3.scaleTime().range([0, width]),
 
 var line = d3.line()
     .curve(d3.curveBasis)
-    .x(function(d) { return x(d.date); })
+    .x(function(d) { return x(d.strike); })
     .y(function(d) { return y(d.temperature); });
 
 d3.tsv("data/data.tsv", type, function(error, data) {
@@ -41,12 +41,12 @@ d3.tsv("data/data.tsv", type, function(error, data) {
     return {
       id: id,
       values: data.map(function(d) {
-        return {date: d.date, temperature: d[id]};
+        return {strike: d.strike, temperature: d[id]};
       })
     };
   });
 
-  x.domain(d3.extent(data, function(d) { return d.date; }));
+  x.domain(d3.extent(data, function(d) { return d.strike; }));
 
   y.domain([
     d3.min(cities, function(c) { return d3.min(c.values, function(d) { return d.temperature; }); }),
@@ -82,7 +82,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {
 
   city.append("text")
       .datum(function(d) { return {id: d.id, value: d.values[d.values.length - 1]}; })
-      .attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.temperature) + ")"; })
+      .attr("transform", function(d) { return "translate(" + x(d.value.strike) + "," + y(d.value.temperature) + ")"; })
       .attr("x", 3)
       .attr("dy", "0.35em")
       .style("font", "10px sans-serif")
@@ -90,8 +90,8 @@ d3.tsv("data/data.tsv", type, function(error, data) {
 });
 
 function type(d, _, columns) {
-  d.date = parseTime(d.date);
-  for (var i = 1, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
+//  d.date = parseTime(d.date);
+//  for (var i = 1, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
   return d;
 }
 
