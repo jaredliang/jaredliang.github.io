@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>  
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {      
+      title:{
+        text: "XLK   Maturity Date: 2017/09/15  "
+      },
+      animationEnabled: true,
+      axisY :{
+        includeZero: false
+      },
+      toolTip: {
+        shared: "true"
+      },
+      data: [
+      {        
+        type: "spline", 
+        color: "green",
+        showInLegend: true,
+        name: "Put",
+        markerSize: 0,        
+        dataPoints: [
+		{x: 52, y: 8932.0 },{x: 53, y: 20232.0 },{x: 54, y: 9074.0 },{x: 55, y: 22675.0 },{x: 56, y: 12605.0 },{x: 57, y: 2865.0 },{x: 58, y: 710.0 },{x: 59, y: 220.0 },{x: 60, y: 730.0 },{x: 61, y: 125.0 },{x: 62, y: 66.0 }        
+        ]
+      },
+      {        
+        type: "spline", 
+        showInLegend: true,
+        color: "red",
+        name: "Call",
+        markerSize: 0,        
+        dataPoints: [
+		{x: 52, y: 172 },{x: 53, y: 645 },{x: 54, y: 1005 },{x: 55, y: 2091 },{x: 56, y: 9595 },{x: 57, y: 3007 },{x: 58, y: 5861 },{x: 59, y: 7244 },{x: 60, y: 4566 },{x: 61, y: 504 },{x: 62, y: 934 }        
+        ]
+      },
+
+
+      {        
+        type: "spline", 
+        showInLegend: true,
+        color: "black",
+        name: "Latest Value",
+        markerSize: 0,        
+        dataPoints: [
+		{x: 57.07 , y: 0.0 },
+		{x: 57.07, y: 22675.0 }
+
+        ]
+      }
+
+
+
+      ]
+    });
+
+chart.render();
+}
+</script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+  <div id="chartContainer" style="height: 300px; width: 100%;">
+  </div>
+</body>
+</html>
