@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>2017/08/20 Forex and Taiwan Index Futures Dashboard </title>
+  <link rel="stylesheet" href="demo/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <script src="spec/fixtures.js"></script>
+  <script src="src/gridList.js"></script>
+  <script src="src/jquery.gridList.js"></script>
+  
+<script>
+var DemoGrid = {
+  currentSize: 3,
+  buildElements: function($gridContainer, items) {
+    var item, i;
+  	  $item =$( '#div1');
+
+    $item.attr({
+        'data-w': 3,
+        'data-h': 2,
+        'data-x': 0,
+        'data-y': 0
+      });
+      $gridContainer.append($item);
+
+/*  	  $item =$( '#div2');
+      $item.attr({
+        'data-w': 3,
+        'data-h': 2,
+        'data-x': 3,
+        'data-y': 0
+      });
+      $gridContainer.append($item);
+	  
+	  
+	  $item =$( '#div3');
+     $item.attr({
+        'data-w': 3,
+        'data-h': 2,
+        'data-x': 0,
+        'data-y': 2
+      });
+      $gridContainer.append($item);
+
+	  $item =$( '#div4');
+     $item.attr({
+        'data-w': 3,
+        'data-h': 2,
+        'data-x': 3,
+        'data-y': 2
+      });
+      $gridContainer.append($item);
+
+
+	  	  	  $item =$( '#div5');
+     $item.attr({
+        'data-w': 3,
+        'data-h': 2,
+        'data-x': 0,
+        'data-y': 4
+      });
+      $gridContainer.append($item);
+
+
+	  
+	  
+	  	  $item =$( '#div6');
+     $item.attr({
+        'data-w': 3,
+        'data-h': 2,
+        'data-x': 3,
+        'data-y': 4
+      });
+      $gridContainer.append($item);
+
+	  */
+	},
+  resize: function(size) {
+    if (size) {
+      this.currentSize = size;
+    }
+    $('#grid').gridList('resize', this.currentSize);
+  },
+  flashItems: function(items) {
+    // Hack to flash changed items visually
+    for (var i = 0; i < items.length; i++) {
+      (function($element) {
+        $element.addClass('changed')
+        setTimeout(function() {
+          $element.removeClass('changed');
+        }, 0);
+      })(items[i].$element);
+    }
+  }
+};
+
+$(window).resize(function() {
+  $('#grid').gridList('reflow');
+});
+
+$(function() {
+  DemoGrid.buildElements($('#grid'), fixtures.DEMO);
+
+  $('#grid').gridList({
+    lanes: DemoGrid.currentSize,
+    widthHeightRatio: 264 / 294,
+    heightToFontSizeRatio: 0.25,
+    onChange: function(changedItems) {
+      DemoGrid.flashItems(changedItems);
+    }
+  });
+  $('#grid li .resize').click(function(e) {
+    e.preventDefault();
+    var itemElement = $(e.currentTarget).closest('li'),
+        itemWidth = $(e.currentTarget).data('w'),
+        itemHeight = $(e.currentTarget).data('h');
+
+    $('#grid').gridList('resizeItem', itemElement, {
+      w: itemWidth,
+      h: itemHeight
+    });
+  });
+  $('.add-row').click(function(e) {
+    e.preventDefault();
+    DemoGrid.resize(DemoGrid.currentSize + 1);
+  });
+  $('.remove-row').click(function(e) {
+    e.preventDefault();
+    DemoGrid.resize(Math.max(1, DemoGrid.currentSize - 1));
+  });
+});
+
+</script>  
+  
+  
+</head>
+<body>
+  <div class="header" valign="middle">
+
+<a href="https://twitter.com/jaredliangtw" class="button" style="width:380px">Trader Jared's Daily Dashboard (2017/08/20)</a> 
+  <a href="#remove-row" class="button remove-row">-</a>
+    <a href="#add-row" class="button add-row">+</a>
+ <p valign="middle">jeweiliang@gmail.com (Jared Liang)</p>
+	</div>
+  <div class="grid-container">
+    <ul id="grid" class="grid">
+      <li class="position-highlight">
+        <div class="inner"></div>
+      </li>
+    </ul>
+  </div>
+  
+  <li id="div1"><div class="inner" style="height:100%;display:inline-block;font-size:12px;line-height:1em">
+	<img src="imgs/20170820_1.png" style="width:100%;height:95%">
+    <p style="display:inline-block;text-decoration:none">[CFTC COT] Euro FX</p></div>   
+  </div></li>
+<!--
+  <li id="div2"><div class="inner" style="height:100%;display:inline-block;font-size:12px;line-height:1em">
+	<img src="imgs/20170819_2.png" style="width:100%;height:95%">
+    <p style="display:inline-block;text-decoration:none">[CFTC COT] USD Index</p></div>   
+  </div></li>
+  <li id="div3"><div class="inner" style="height:100%;display:inline-block;font-size:12px;line-height:1em">
+	<img src="imgs/20170819_3.png" style="width:100%;height:95%">
+    <p style="display:inline-block;text-decoration:none">[CFTC COT] Nasdaq 100</p></div>   
+  </div></li>
+  <li id="div4"><div class="inner" style="height:100%;display:inline-block;font-size:12px;line-height:1em">
+	<img src="imgs/20170819_4.png" style="width:100%;height:95%">
+    <p style="display:inline-block;text-decoration:none">[CFTC COT] GOLD</p></div>   
+  </div></li>
+  <li id="div5"><div class="inner" style="height:100%;display:inline-block;font-size:12px;line-height:1em">
+	<img src="imgs/20170819_5.png" style="width:100%;height:95%">
+    <p style="display:inline-block;text-decoration:none">[CFTC COT] VIX</p></div>   
+  </div></li>
+
+  <li id="div6"><div class="inner" style="height:100%;display:inline-block;font-size:12px;line-height:1em">
+ <iframe width=100% height=100% frameborder=0 src='./iframes/xlk20170915.html'></iframe>
+
+	</div></li>
+
+  -->
+
+
+
+  
+  
+  <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>
